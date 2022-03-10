@@ -1,7 +1,4 @@
 
-Hello World
-Hello World Again
-Hello World again and again
-Hi
-Hello
-# Do not consider this message
+ls
+
+echo$shell
