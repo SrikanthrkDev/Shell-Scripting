@@ -2,6 +2,6 @@
 ls
 
 echo$shell
-echo -e "\e[32mHi\[0m"
+echo -e "\e[31mHi\e[0m"
 echo -e "Line1\n\nLine2"
 echo -e "word1\t\tword2"
