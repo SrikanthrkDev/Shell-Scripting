@@ -1,7 +1,7 @@
 #!/bin/bash
 
-1=100
+a=100
 
-echo ${1}times
+echo ${a}times
 
 
