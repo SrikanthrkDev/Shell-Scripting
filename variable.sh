@@ -2,6 +2,6 @@
 
 1=12
 
-echo $1times
+echo $1
 
 
