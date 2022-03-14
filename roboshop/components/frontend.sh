@@ -9,26 +9,20 @@ statcheck() {
 }
 yum install nginx -y
 statcheck $?
-systemctl enable nginx
-statcheck$?
-systemctl start nginx
-statcheck $?
 
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip
 statcheck $?
-cd /usr/share/nginx/html
-statcheck $?
-rm -rf *
+rm -rf /usr/share/nginx/html
 statcheck $?
 unzip /tmp/frontend.zip
-statcheck $?
 mv frontend-main/* .
-statcheck $?
 mv static/* .
-statcheck $?
 rm -rf frontend-main README.md
-statcheck $?
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 statcheck $?
 systemctl restart nginx
+statcheck $?
+systemctl enable nginx
+statcheck$?
+systemctl start nginx
 statcheck $?
