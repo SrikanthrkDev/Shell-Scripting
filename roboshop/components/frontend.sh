@@ -11,7 +11,7 @@ statcheck() {
 yum install nginx -y
 statcheck $?
 
-curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip
+curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip
 statcheck $?
 rm -rf /usr/share/nginx/html
 statcheck $?
