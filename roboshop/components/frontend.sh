@@ -25,5 +25,3 @@ systemctl restart nginx
 statcheck $?
 systemctl enable nginx
 statcheck$?
-systemctl start nginx
-statcheck $?
