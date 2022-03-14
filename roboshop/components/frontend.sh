@@ -2,7 +2,7 @@
 
 statcheck() {
   if [ $1 -eq 0 ]; then
-   echo -e "\e[32mSUCCESS\e[0m";
+   echo -e "\e[32mSUCCESS\e[0m"
   else
    echo -e "\e[31mFAILURE\e[0m"
    exit 2
@@ -11,7 +11,7 @@ statcheck() {
 yum install nginx -y
 statcheck $?
 
-curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip
+curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 statcheck $?
 rm -rf /usr/share/nginx/html
 statcheck $?
